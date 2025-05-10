@@ -1,0 +1,92 @@
+
+.exploreDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Exheading{
+    font-size:2.25rem; 
+    font-weight: 600;
+}
+
+.exsubheading{
+    color: var(--richblack-300);
+
+}
+
+.tabscont{
+    display: none;
+    align-items: center;
+    background-color: var(--richblack-800);
+    border-radius: 20px;
+    padding: 2px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--richblack-700);
+}
+
+.tabs{
+    display: inline-block;
+    font-size: 16px;
+    gap: 10px;
+    background-color: var();
+    color: var(--richblack-200);
+    border-radius: 5rem;
+    transition: all 1s;
+    cursor: pointer;
+    padding: 0.65rem 1.5rem;
+}
+
+.tabs:hover{
+    color: var(--richblack-100);
+    background-color: var(--richblack-900);
+}
+
+
+.back{
+    background-color: var(--richblack-900);
+    color: var(--richblack-5);
+    font-size: medium;
+}
+
+
+
+.cards{
+    margin-top: 2rem;
+    width: 91%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem; 
+    color: var(--black);
+    margin-bottom: 1.75rem; 
+    padding-left: 0.75rem; 
+    padding-right: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+    .exploreDiv{
+        margin-top: 5rem;
+    }
+    .tabscont{
+        display: flex;
+    }
+    .cards {
+        margin-top: 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(50%);
+      justify-content: space-between;
+      gap: 0;
+      margin-bottom: 1rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .precard{
+        height: 160px;
+    }
+}

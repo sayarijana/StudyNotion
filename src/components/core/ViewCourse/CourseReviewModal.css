@@ -1,0 +1,142 @@
+.CourseReviewModal__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+  
+.CourseReviewModal__container {
+    margin: 2.5rem 0;
+    width: 91.666667%; 
+    max-width: 700px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--richblack-400);
+    background-color: var(--richblack-800);
+}
+
+.CourseReviewModal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--richblack-700);
+    padding: 1.25rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+  
+.CourseReviewModal__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--richblack-5);
+}
+  
+.CourseReviewModal__closeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--richblack-5);
+    font-size: 1.5rem;
+}
+  
+
+.CourseReviewModal__body {
+    padding: 1.5rem;
+}
+  
+.CourseReviewModal__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+  
+.CourseReviewModal__avatar {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+  
+.CourseReviewModal__userDetails {
+    display: flex;
+    flex-direction: column;
+}
+  
+.CourseReviewModal__userName {
+    font-weight: 600;
+    color: var(--richblack-5);
+}
+  
+.CourseReviewModal__userTag {
+    margin-top: -0.5rem;
+    font-size: 0.875rem;
+    color: var(--richblack-5);
+}
+  
+.CourseReviewModal__form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CourseReviewModal__formGroup {
+    width: 91.666667%; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+  
+.CourseReviewModal__label {
+    font-size: 0.875rem;
+    color: var(--richblack-5);
+}
+  
+.CourseReviewModal__label sup {
+    color: var(--pink-200);
+}
+  
+.CourseReviewModal__textarea {
+    min-height: 130px;
+    width: 100%;
+    resize: none;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: var(--richblack-700);
+    border: 1px solid var(--richblack-500);
+    color: var(--richblack-5);
+}
+
+.CourseReviewModal__error {
+    font-size: 0.75rem;
+    color: var(--pink-200);
+    margin-left: 0.5rem;
+    letter-spacing: 0.025em;
+}
+  
+  
+.CourseReviewModal__actions {
+    margin-top: 1.5rem;
+    width: 91.666667%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+  
+.CourseReviewModal__cancelBtn {
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    background-color: var(--richblack-300);
+    color: var(--richblack-900);
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+}
+  

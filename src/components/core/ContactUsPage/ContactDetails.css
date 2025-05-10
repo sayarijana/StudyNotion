@@ -1,0 +1,45 @@
+.ContactDetails-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: var(--richblack-800);
+    padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .ContactDetails-container {
+      padding: 1.5rem;
+    }
+}
+
+.ContactDetails-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0.75rem;
+    font-size: 0.875rem; 
+    color: var(--richblack-200);
+}
+
+.ContactDetails-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.ContactDetails-heading {
+    font-size: 1.125rem; 
+    font-weight: 600;
+    color: var(--richblack-5);
+}
+
+.ContactDetails-description {
+    font-weight: 500;
+}
+  
+.ContactDetails-details {
+    margin-top: -0.5rem;
+    font-weight: 600;
+}

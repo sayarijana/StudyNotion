@@ -1,0 +1,52 @@
+.contactUsCont {
+    color: var(--white); 
+}
+
+.ContactUs-top-section {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%; 
+    max-width: 1200px; 
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; 
+    justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+    .ContactUs-top-section {
+      flex-direction: row;
+    }
+  
+    .ContactUs-details {
+      width: 40%;
+    }
+  
+    .ContactUs-form {
+      width: 60%;
+    }
+}
+
+.ContactUs-review-section {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 4rem; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1160px;
+    background-color: var(--richblack-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ContactUs-review-heading {
+    margin-top: 2rem; 
+    font-size: 2.25rem; 
+    font-weight: 600; 
+}
+  

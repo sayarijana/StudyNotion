@@ -1,0 +1,101 @@
+.catalog-page{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.catalog-header-cont{
+    padding: 0 1rem;
+    background-color: var(--richblack-800);
+    box-sizing: border-box;
+}
+
+.catalog-header{
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+.catalog-breadcrumb{
+    font-size: 0.875rem;
+    color: var(--richblack-300);
+}
+
+.catalog-breadcrumb span{
+    color: var(--yellow-25);
+}
+
+.catalog-title{
+    font-size: 1.875rem;
+    color: var(--richblack-5);
+}
+
+.catalog-description{
+    margin-top: -1rem;
+    max-width: 870px;
+    color: var(--richblack-200);
+}
+
+.catalog-section {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1160px;        
+    margin: 0 auto;
+    padding: 3rem 1rem;         
+}
+
+.section-heading,
+.CFBsection-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--richblack-5);
+}
+
+.catalog-tabs{
+    display: flex;
+    font-size: 0.875rem;
+    border-bottom: 1px solid var(--richblack-600);
+    margin-bottom: 1rem;
+}
+
+.catalog-tab{
+    padding: 0.5rem 1rem;
+    color: var(--richblack-50);
+    cursor: pointer;
+}
+
+.catalog-tab-active{
+    border-bottom: 2px solid var(--yellow-25);
+    color: var(--yellow-25);
+}
+
+.course-slider-container {
+    padding: 1rem 0;
+}
+
+.frequently-bought-section {
+    box-sizing: border-box;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.frequently-bought-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .frequently-bought-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+

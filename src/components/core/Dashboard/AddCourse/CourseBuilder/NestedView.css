@@ -1,0 +1,117 @@
+.nestedview-container {
+    background-color: var(--richblack-700);
+    border-radius: 0.5rem; 
+    padding: 1.5rem 2rem;  
+}
+  
+.nestedview-content details {
+    margin-bottom: 0.75rem;
+}
+  
+.nestedview-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--richblack-600);
+    cursor: pointer;
+}
+  
+.nestedview-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+  
+.nestedview-section-title p {
+    color: var(--richblack-50);
+    font-weight: 600;
+}
+  
+.nestedview-section-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+  
+.nestedview-section-actions .nestedview-icon {
+    color: var(--richblack-300);
+    font-size: 1.25rem;    
+    cursor: pointer;
+}
+
+.nestedview-section-actions button {
+    background: none;
+    border: none;
+}
+
+.nestedview-subsection-actions button {
+    background: none;
+    border: none;
+}
+  
+.nestedview-divider {
+    color: var(--richblack-300);
+    font-weight: 500;
+}
+  
+.nestedview-subsections {
+    padding: 0 1.5rem 1rem; 
+}
+  
+.nestedview-subsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--richblack-600);
+    cursor: pointer;
+}
+  
+.nestedview-subsection-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+  
+.nestedview-subsection-title p {
+    color: var(--richblack-50);
+    font-weight: 600;
+}
+  
+  
+.nestedview-subsection-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+  
+.nestedview-subsection-actions .nestedview-icon {
+    color: var(--richblack-300);
+    font-size: 1.25rem;
+    cursor: pointer;
+}  
+  
+.nestedview-icon {
+    color: var(--richblack-50);
+    font-size: 1.25rem;
+}
+  
+
+.nestedview-addlecture {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    color: var(--yellow-50);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+  
+.nestedview-addlecture .nestedview-icon {
+    font-size: 1.125rem;
+}
+  

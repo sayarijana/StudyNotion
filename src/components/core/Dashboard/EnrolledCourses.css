@@ -1,0 +1,116 @@
+.EnrolledCourses-container {
+    font-size: 1.875rem;
+    color: var(--richblack-50);       
+    margin-top: 0;      
+}
+  
+.EnrolledCourses-loading {
+    display: grid;
+    min-height: calc(100vh - 3.5rem); 
+    place-items: center;           
+}
+
+.EnrolledCourses-empty {
+    display: grid;
+    height: 10vh;                     
+    width: 100%;
+    place-content: center;            
+    color: var(--richblack-5);        
+}
+
+.EnrolledCourses-table {
+    margin: 3rem 0;                  
+    color: var(--richblack-5);      
+}
+  
+.EnrolledCourses-header {
+    display: flex;
+    background-color: var(--richblack-500); 
+    border-top-left-radius: 0.5rem;   
+    border-top-right-radius: 0.5rem;
+}
+  
+.EnrolledCourses-header p:first-child {
+    width: 45%;                      
+    padding: 0.75rem 1.25rem;         
+}
+  
+.EnrolledCourses-header p:nth-child(2) {
+    width: 25%;                       
+    padding: 0.75rem 0.5rem;          
+}
+  
+.EnrolledCourses-header p:nth-child(3) {
+    flex: 1;                          
+    padding: 0.75rem 0.5rem;          
+}
+  
+.EnrolledCourses-courseItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--richblack-700); 
+}
+  
+.EnrolledCourses-courseItem.rounded-b-lg {
+    border-bottom-left-radius: 0.5rem; 
+    border-bottom-right-radius: 0.5rem;
+}
+  
+.EnrolledCourses-courseInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;                        
+    width: 45%;                      
+    padding: 0.75rem 1.25rem;         
+    cursor: pointer;
+}
+ 
+.EnrolledCourses-thumbnail {
+    width: 5rem;                  
+    height: 5rem;                 
+    border-radius: 0.5rem;           
+    object-fit: cover;               
+}
+  
+.EnrolledCourses-courseDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;                    
+    max-width: 20rem;            
+}
+  
+.EnrolledCourses-courseTitle {
+    font-weight: 600;                 
+}
+  
+.EnrolledCourses-courseDesc {
+    margin-top: -0.5rem;
+    font-size: 0.75rem;           
+    color: var(--richblack-300);      
+}
+  
+.EnrolledCourses-duration {
+    width: 25%;                       
+    padding: 0.75rem 0.5rem;       
+    font-size: 0.875rem;              
+    font-weight: 500;                
+    color: var(--richblack-5);
+}
+  
+.EnrolledCourses-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;                      
+    width: 15%;                     
+    padding: 0.75rem 0.5rem;        
+}
+  
+.EnrolledCourses-progress p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+  
+.EnrolledCourses-progress .react-progress-bar {
+    height: 0.5rem !important;        
+}
+  
