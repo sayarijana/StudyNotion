@@ -29,9 +29,9 @@ app.use(cookieParser());
 app.use(
     cors({
     origin: [
-          "https://studynotion-frontend-kappa-peach.vercel.app",
-          "https://studynotion-frontend-hqhi9ekyl-sayari-janas-projects.vercel.app",
-          "https://studynotion-frontend-git-main-sayari-janas-projects.vercel.app"
+        //   "https://studynotion-frontend-kappa-peach.vercel.app",
+        //   "https://studynotion-frontend-hqhi9ekyl-sayari-janas-projects.vercel.app",
+        //   "https://studynotion-frontend-git-main-sayari-janas-projects.vercel.app"
         ],
        credentials:true
     })
