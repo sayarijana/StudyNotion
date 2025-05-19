@@ -48,8 +48,9 @@
     "react-dev-utils": "^12.0.1",    
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
 
-    
+
     "react-dropzone": "^14.3.5",
     "react-hook-form": "^7.54.2",
     "react-hot-toast": "^2.5.1",
@@ -83,7 +84,8 @@
   "client": "node scripts/start.js",         
   "server": "cd server && npm run dev",      
   "start": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\"",
-  "dev": "npm start"
+  "dev": "npm start",
+  "build": "react-scripts build"
 },
   "eslintConfig": {
     "extends": [
