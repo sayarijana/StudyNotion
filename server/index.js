@@ -25,17 +25,31 @@ database.dbConnect();
 app.use(express.json());
 app.use(cookieParser());
 
-//frontend url
+// ✅ CORS Configuration (Allow frontend URLs)
+const allowedOrigins = [
+  "https://studynotion-frontend-kappa-peach.vercel.app",
+  "https://studynotion-frontend-git-main-sayari-janas-projects.vercel.app",
+  "https://studynotion-frontend-hqhi9ekyl-sayari-janas-projects.vercel.app"
+];
+
 app.use(
     cors({
-    origin: [
-        //   "https://studynotion-frontend-kappa-peach.vercel.app",
-        //   "https://studynotion-frontend-hqhi9ekyl-sayari-janas-projects.vercel.app",
-        //   "https://studynotion-frontend-git-main-sayari-janas-projects.vercel.app"
-        ],
+
+      origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+          callback(null, true);
+        } else {
+          console.log("❌ Blocked by CORS:", origin);
+          callback(new Error("Not allowed by CORS"));
+        }
+      },
+    
        credentials:true
     })
 );
+
+// ✅ Allow preflight requests
+app.options("*", cors());
 
 app.use(
     fileUpload(
