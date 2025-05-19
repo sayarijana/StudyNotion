@@ -28,7 +28,7 @@ app.use(cookieParser());
 //frontend url
 app.use(
     cors({
-        origin:"http://localhost:3000",
+        origin:"https://studynotion-backend-peeo.onrender.com",
         credentials:true
     })
 );
