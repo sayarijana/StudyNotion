@@ -1,0 +1,131 @@
+.fullSec{
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+    .fullSec{
+        margin-bottom: 0;
+        margin-top: 0;
+        align-items: normal;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fullSec.row {
+      flex-direction: row;
+      justify-content: space-between !important;
+    }
+  
+    .fullSec.row-reverse {
+      flex-direction: row-reverse;
+      justify-content: space-between !important;
+    }
+}
+
+.row{
+    flex-direction: column-reverse;
+}
+
+.row-reverse {
+   flex-direction: column-reverse;
+}
+
+.codeSec{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .codeSec {
+      width: 50%;
+    }
+}
+
+.subh{
+    width: 85%;
+    margin-top: -0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--richblack-300);
+}
+
+
+.codebtn{
+    display:  flex;
+    gap: 1.75rem;
+    margin-top: 1.75rem;
+}
+
+.trybtn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sec2{
+    height: fit-content;  
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.75rem 0.75rem;
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+    width: 100%;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right bottom, #ffffff38, #ffffff00);
+    background: linear-gradient(111.93deg, rgba(14, 26, 45, 0.24) -1.4%, rgba(17, 30, 50, 0.38) 104.96%);
+}
+
+.codeline{
+    margin-top: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    width: 10%;
+    color: var(--richblack-400);
+}
+
+.codeline p{
+    margin-top: -0.85rem;
+}
+
+.codetext{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    padding-right: 0.25rem;
+    color: var(--yellow-5);
+}
+
+@media (min-width: 640px) {
+    .sec2 {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sec2 {
+      width: 470px;
+    }
+}
+
+@media (max-width: 640px) {
+    .codeline p{
+        margin-top: -0.635rem;
+    }
+}

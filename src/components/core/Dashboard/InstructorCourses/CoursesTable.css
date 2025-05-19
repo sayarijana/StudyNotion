@@ -1,0 +1,131 @@
+.courses-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--richblack-800);
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+  
+.courses-table-header {
+    background-color: var(--richblack-800);
+    color: var(--richblack-100);
+    text-align: left;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.courses-table-row {
+    border-bottom: 1px solid var(--richblack-700);
+    transition: background-color 0.2s;
+}
+
+.courses-table-row:hover {
+    background-color: var(--richblack-800);
+}
+  
+.courses-table-data {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--richblack-100);
+    padding:0.5rem 1.5rem;
+}  
+
+.courses-thumbnail {
+    width: 220px;
+    height: 148px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+  
+.courses-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.courses-title {
+    font-size: 1.125rem; 
+    font-weight: 600;
+    color: var(--richblack-5);
+}
+
+.courses-desc {
+    font-size: 0.75rem;
+    color: var(--richblack-300);
+}
+ 
+.courses-created {
+    font-size: 0.75rem;
+    color: var(--white);
+}
+  
+.courses-status-draft {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--richblack-700);
+    padding: 0.125rem 0.5rem;
+    border-radius:2px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--pink-100);
+    width: fit-content;
+}
+  
+.courses-status-published {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--richblack-700);
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--yellow-100);
+    width: fit-content;
+}  
+
+.courses-status-published svg {
+    background-color: var(--yellow-100);
+    color: var(--richblack-700);
+    border-radius: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+    padding: 0.1rem;
+}
+
+.courses-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+  
+.courses-action-btn {
+    padding: 0.25rem 0.5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: var(--richblack-100);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+  
+.courses-action-btn:hover {
+    transform: scale(1.1);
+    color: var(--caribbeangreen-300);
+}
+
+.courses-action-delete {
+    color: var(--pink-100);
+}
+
+.courses-action-delete:hover {
+    color: #ff0000;
+}
+  

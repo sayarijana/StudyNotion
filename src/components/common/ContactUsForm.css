@@ -1,0 +1,116 @@
+.sec-6FormC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 1rem;
+}
+.sec-6NameCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 960px) {
+    .sec-6NameCont {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}      
+   
+.sec-6Formele{
+   display: flex; 
+   flex-direction: column;
+   gap: 0.5rem;
+   width: 100%;
+}
+
+.sec-6Formele label{
+    color: var(--richblack-5);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.sec-6Formele input,
+.sec-6Formele textarea{
+    background-color: var(--richblack-900);
+    color: var(--richblack-5);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--richblack-600);
+    font-size: 15px;
+}
+
+.sec-6dropdown{
+    width: 55px;
+    border-radius: 6px;
+    background-color: var(--richblack-900);
+    border: 1px solid var(--richblack-600);
+    color: var(--richblack-100);
+}
+
+.sec-6Formele input:focus,
+.sec-6Formele textarea:focus,
+.sec-6dropdown:focus{
+    outline: none;
+    border-color: var(--yellow-100); 
+    box-shadow: 0 0 0 1px var(--yellow-100);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phsec{
+    display: flex;
+    flex-direction: row;
+}
+.sec-6ph{
+    flex: 1;
+}
+
+.sec-6Formele textarea {
+    outline: none;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.sec-6Formele span{
+    margin-top: -0.25rem;
+    font-size: 0.75rem; 
+    color: var(--yellow-100);
+}    
+
+.contactBtnSec-6{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    background-color: var(--yellow-50);
+    color: var(--black);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.18);
+}
+
+.contactBtnSec-6:hover {
+    transition:all 0.2s;
+    transform: scale(0.97);
+    box-shadow: none;
+}
+
+.contactBtnSec-6:disabled{
+    background-color: var(--richblack-500);
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .sec-6NameCont {
+      flex-direction: column;
+    }
+    .phsec{
+        display: flex;
+        flex-direction: row;
+    }
+}

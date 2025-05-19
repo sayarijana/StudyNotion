@@ -1,0 +1,12 @@
+.settings-container{
+    max-width:var(--max-content);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.settings-title{
+    margin-bottom: 2.5rem;
+    font-size: 1.875rem;
+    font-weight: 500;
+}

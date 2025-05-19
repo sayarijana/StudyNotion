@@ -1,0 +1,66 @@
+.ViewCourse-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ViewCourse-toggle-bar {
+  display: none;
+  height: 3.5rem;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--richblack-600);
+}
+
+.ViewCourse-toggle-bar svg {
+  cursor: pointer;
+}
+
+.ViewCourse-wrapper {
+  display: flex;
+  height: calc(100vh - 3.5rem);
+}
+
+
+.ViewCourse-content {
+  flex: 1;
+  height: calc(100vh - 3.5rem);
+  overflow-y: auto;
+}
+
+.ViewCourse-marginX {
+  margin: 1rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ViewCourse-toggle-bar {
+    display: flex;
+  }
+
+  .ViewCourse-wrapper {
+    height: auto;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .ViewCourse-sidebar {
+    position: fixed;
+    top: 7.5rem;
+    left: -100%;
+    height: calc(100vh - 3.5rem);
+    z-index: 1000;
+    width: 80%;
+    max-width: 300px;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .ViewCourse-sidebar.show {
+    left: 0;
+  }
+
+  .ViewCourse-content {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,15 @@
+.CourseSubSectionAccordion-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+  
+.CourseSubSectionAccordion-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--richblack-5);
+    font-size: 1rem;
+}
+  

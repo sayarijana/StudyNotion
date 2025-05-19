@@ -1,0 +1,8 @@
+.headcolortext{
+    background: linear-gradient(to bottom, #1FA2FF, #12D8FA, #A6FFCB);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+}

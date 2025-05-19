@@ -1,0 +1,88 @@
+.coursebuilderform-container {
+    border: 1px solid var(--richblack-700);
+    background-color: var(--richblack-800);
+    border-radius: 0.375rem; 
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+  
+.coursebuilderform-heading {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: var(--richblack-5);
+}
+  
+.coursebuilderform-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.coursebuilderform-inputgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.coursebuilderform-inputgroup label {
+    font-size: 0.875rem; 
+    color: var(--richblack-5);
+}
+  
+.coursebuilderform-required {
+    color: var(--pink-200);
+}
+  
+.coursebuilderform-inputgroup input {
+    padding: 0.5rem 0.75rem;
+    background-color: var(--richblack-700);
+    border: 1px solid var(--richblack-600);
+    color: var(--richblack-5);
+    border-radius: 0.375rem;
+    outline: none;
+    font-size: 0.875rem;
+}
+  
+.coursebuilderform-error {
+    font-size: 0.75rem; 
+    margin-left: 0.5rem;
+    color: var(--pink-200);
+    letter-spacing: 0.025em;
+}
+  
+.coursebuilderform-actions {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem; 
+}
+  
+.coursebuilderform-cancelbtn {
+    font-size: 0.875rem;
+    color: var(--richblack-300);
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.coursebuilderform-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem; 
+}
+  
+.coursebuilderform-backbtn {
+    background-color: var(--richblack-300);
+    color: var(--richblack-900);
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+  

@@ -1,0 +1,261 @@
+/* .courseInfoform{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border: 1px solid var(--richblack-700);
+    background-color: var(--richblack-800);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.courseInfoform__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.courseInfoform__form-group label {
+    font-size: 0.875rem;
+    color: var(--richblack-5);
+}
+
+.courseInfoform__form-group sup {
+    color: var(--pink-200);
+}
+
+.courseInfoform__input-field {
+    padding: 0.5rem 0.75rem;
+    background-color: var(--richblack-700);
+    border: 1px solid var(--richblack-400);
+    border-radius: 0.375rem;
+    color: var(--richblack-5);
+}
+
+.courseInfoform__input-field::placeholder {
+    color: var(--richblack-400);
+}
+.courseInfoform__input-field_p {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.courseInfoform__input-field_p::placeholder {
+    color: var(--richblack-400);
+    padding-left: 1.75rem;
+}
+
+.courseInfoform__textarea {
+    padding: 0.75rem;
+    min-height: 130px;
+    background-color: var(--richblack-700);
+    border: 1px solid var(--richblack-400);
+    border-radius: 0.375rem;
+    color: var(--richblack-5);
+    resize: none;
+}
+
+.courseInfoform__textarea::placeholder {
+    color: var(--richblack-400);
+}
+
+.courseInfoform__error-text {
+    font-size: 0.75rem;
+    color: var(--pink-200);
+    margin-left: 0.5rem;
+}
+
+.courseInfoform__input-container {
+    position: relative;
+}
+
+.courseInfoform__icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--richblack-400);
+    pointer-events: none;
+}
+
+.courseInfoform__select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--richblack-700);
+    border: 1px solid var(--richblack-400);
+    border-radius: 0.375rem;
+    color: var(--richblack-5);
+}
+
+.courseInfoform__select option {
+    color: var(--richblack-5);
+}
+  
+.courseInfoform__select::placeholder {
+    color: var(--richblack-400);
+}
+
+.courseInfoform_newButton__container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.courseInfoform_newButton__continue-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 0.375rem;
+    background-color: var(--richblack-300);
+    font-weight: 600;
+    color: var(--richblack-900);
+    border: none;
+} */
+
+
+
+
+.courseInfoform {
+    background-color: var(--richblack-800);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border:1px solid var(--richblack-700);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}  
+
+.courseInfoform__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}  
+
+.courseInfoform__form-group label {
+    font-size: 0.875rem; 
+    color: var(--richblack-5);
+}
+
+.courseInfoform__form-group sup {
+    color: var(--pink-200);
+}
+  
+.courseInfoform__error-text {
+    font-size: 0.75rem; 
+    color: var(--pink-200);
+    margin-left: 0.5rem;
+}
+
+.courseInfoform__input-field {
+    padding: 0.5rem 1rem; 
+    border-radius: 0.25rem; 
+    background-color: var(--richblack-800);
+    color: var(--richblack-5);
+    border: 1px solid var(--richblack-700);
+    font-size: 0.875rem; 
+}
+  
+.courseInfoform__textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; 
+    background-color: var(--richblack-800);
+    color: var(--richblack-5);
+    border: 0.0625rem solid var(--richblack-700); 
+    font-size: 0.875rem; 
+    min-height: 8.125rem; 
+}
+  
+.courseInfoform__select {
+    padding: 0.5rem 1rem; 
+    border-radius: 0.25rem; 
+    background-color: var(--richblack-800);
+    color: var(--richblack-5);
+    border: 0.0625rem solid var(--richblack-700); 
+    font-size: 0.875rem; 
+}
+  
+
+.courseInfoform__input-container {
+    position: relative;
+}
+
+.courseInfoform__input-field_p {
+    width: 100%; 
+    box-sizing: border-box; 
+    padding-left: 2.5rem; 
+}
+  
+.courseInfoform__icon {
+    position: absolute;
+    left: 0.75rem; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--richblack-400);
+    font-size: 1.25rem; 
+}
+  
+.courseInfoform_newButton__container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+  
+.courseInfoform_newButton__continue-btn {
+    background-color: var(--richblack-300);
+    color: var(--richblack-900);
+    font-weight: 600;
+    padding: 0.5rem 1.25rem; 
+    border-radius: 0.25rem; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+  
+.courseInfoform_newButton__continue-btn:disabled {
+    background-color: var(--richblack-500);
+    cursor: not-allowed;
+}
+  
+
+.courseInfoform_newButton__continue-btn svg {
+    font-size: 1.25rem; 
+}
+  
+
+.courseInfoform__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; 
+}
+  
+.courseInfoform__upload {
+    margin-top: 2rem; 
+    border: 1px dashed var(--richblack-700);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem; 
+    background-color: var(--richblack-800);
+}
+  
+.courseInfoform__upload .upload-icon {
+    color: var(--richblack-400);
+    font-size: 3rem; 
+}
+  
+.courseInfoform__chip-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+  
+.courseInfoform__chip-input input {
+    background-color: var(--richblack-800);
+    color: var(--richblack-5);
+    border: 1px solid var(--richblack-700); 
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem; 
+    width: 12.5rem; 
+}

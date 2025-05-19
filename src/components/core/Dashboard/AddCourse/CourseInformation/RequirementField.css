@@ -1,0 +1,79 @@
+.requirementField__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+  
+.requirementField__label {
+    font-size: 0.875rem; 
+    color: var(--richblack-5);
+}
+  
+.requirementField__label sup {
+    color: var(--pink-200);
+}
+
+.requirementField__input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+  
+.requirementField__input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--richblack-800);
+    color: var(--richblack-5);
+    border: 1px solid var(--richblack-700);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+.requirementField__input::placeholder {
+    color: var(--richblack-400);
+}
+  
+.requirementField__add-btn {
+    font-weight: 600;
+    color: var(--yellow-50);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+  
+.requirementField__list {
+    margin-top: 0.5rem;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0;
+}
+  
+.requirementField__list-item {
+    display: flex;
+    align-items: center;
+    color: var(--richblack-5);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+  
+.requirementField__clear-btn {
+    margin-left: 0.5rem;
+    font-size: 0.9rem; 
+    color: var(--pure-greys-300);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+  
+.requirementField__error-text {
+    margin-left: 0.5rem; 
+    font-size: 0.75rem;
+    color: var(--pink-200);
+    letter-spacing: 0.025em; 
+}
+  

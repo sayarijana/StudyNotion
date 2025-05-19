@@ -1,0 +1,43 @@
+.course-slider-container {
+    width: 100%;
+    position: relative;
+    background-color: var(--richblack-900);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mySwiper {
+    max-height: 30rem;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+}
+
+.no-course-message {
+    font-size: 1.25rem;
+    color: var(--richblack-5);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--richblack-100);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--caribbeangreen-300);
+}
+
+.swiper-pagination-bullet {
+    background: var(--richblack-500);
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--caribbeangreen-300);
+    opacity: 1;
+}

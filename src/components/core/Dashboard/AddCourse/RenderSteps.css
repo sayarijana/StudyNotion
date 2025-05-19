@@ -1,0 +1,99 @@
+.steps-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.steps-indicators{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 16px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+}
+
+.step-circle {
+    display: grid;
+    place-items: center;
+}
+
+.step-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    font-weight: bold;
+    aspect-ratio: 1;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--richblack-700);
+    background-color: var(--richblack-800);
+    color: var(--richblack-300);
+}
+
+.step-button.active {
+    border-color: var(--yellow-50);
+    background-color: var(--yellow-900);
+    color: var(--yellow-50);
+}
+
+.step-button.completed {
+    background-color: var(--yellow-50);
+    color: var(--yellow-50);
+}
+
+.check-icon {
+    color: var(--richblack-900);
+    font-weight: bold;
+}
+
+.step-connector {
+    position: absolute;
+    top: 45%;
+    transform: translateX(60%);
+    height: 2px;
+    width: 33%;
+    flex-grow: 1;
+    border-bottom: 2px dashed var(--richblack-500);
+    align-self: center;
+}
+
+.step-connector.completed {
+    border-bottom:2px dashed var(--yellow-50);
+}
+
+.steps-labels {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.step-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 130px;
+    gap: 0.5rem;
+}
+
+.step-title {
+    font-size: 14px;
+    color: var(--richblack-500);
+    text-align: center;
+}
+
+.step-title.active-label {
+    color: var(--richblack-5);
+}
+  

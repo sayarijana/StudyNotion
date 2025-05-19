@@ -1,0 +1,124 @@
+.timeline{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.divcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.leftcont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+}
+
+.eachEle{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logoImg {
+    width: 52px;
+    height: 52px;
+    background-color: var(--white);
+    border-radius: 50%;
+    box-shadow: 0 0 62px 0 #00000012;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoheading{   
+    margin-bottom: -11px;
+    font-size: 1.125rem; 
+    font-weight: 600;
+}
+
+.logodesc {
+    font-size: 1rem;
+}
+
+.rightcont {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 0px 30px 0px var(--blue-200, rgba(173, 216, 230, 0.4));
+}
+
+.image {
+    object-fit: cover;
+    height: 400px;
+    box-shadow: 20px 20px 0px 0px var(--white);
+}
+
+.overlap{
+    position: absolute;
+    background-color: var(--caribbeangreen-700);    
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    text-transform: uppercase;
+    line-height: 14px;
+    left: 5%;
+    top: 20%;
+    transform: translateY(-52%) translateX(-10%);
+}
+
+@media screen and (min-width: 1024px){
+    .overlap{
+        flex-direction: row;
+        justify-content: space-between;
+        left: 20% !important;
+        top: 100% !important;
+        transform: translateY(-50%) translateX(-10%) !important;
+    }
+    .gbox1{
+        border-right: 1px solid var(--caribbeangreen-300) !important;
+    }
+}
+
+.gbox1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.gbox2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.gboxp{
+    font-size: 0.875rem;
+    color: var(--caribbeangreen-300);
+    width: 75px;
+} 
+
+@media screen and (min-width: 1024px) {
+    .divcont {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 5rem;
+    }
+  
+    .leftcont {
+      width: 45%;
+      gap: 1rem;
+    }
+}
+

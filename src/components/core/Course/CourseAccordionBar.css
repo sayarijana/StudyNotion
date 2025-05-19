@@ -1,0 +1,80 @@
+.CourseAccordionBar-container {
+    overflow: hidden;
+    border: 1px solid var(--richblack-600);
+    background-color: var(--richblack-700);
+    color: var(--richblack-5);
+}
+
+.CourseAccordionBar-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem 1.75rem; 
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease;
+}
+  
+.CourseAccordionBar-header:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.CourseAccordionBar-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rotate-180 {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.rotate-0 {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.CourseAccordionBar-lectureCount {
+    display: flex;
+    gap: 1rem;
+    color: var(--yellow-25);
+}
+
+.CourseAccordionBar-lectureCount span {
+    color: var(--yellow-25);
+    font-size: 0.875rem; 
+    font-weight: 500;
+}
+  
+.CourseAccordionBar-content {
+    height: 0;
+    overflow: hidden;
+    background-color: var(--richblack-900);
+    transition: height 0.35s ease;
+    position: relative;
+}
+
+.CourseAccordionBar-active {
+    height: auto !important;
+}
+
+.CourseAccordionBar-subsections {
+    padding: 1.5rem 1.75rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--richblack-5);
+}
+
+
+@media (max-width: 768px) {
+    .CourseAccordionBar-header {
+      padding: 1.25rem 1rem;
+    }
+  
+    .CourseAccordionBar-subsections {
+      padding: 1.25rem 1rem;
+    }
+}

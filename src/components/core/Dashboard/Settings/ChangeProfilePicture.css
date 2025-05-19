@@ -1,0 +1,66 @@
+.changeprofile-container {
+    border: 1px solid var(--richblack-700);
+    background-color: var(--richblack-800);
+    color: var(--richblack-5);
+    padding: 2rem 3rem;            
+    border-radius: 0.375rem;        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.changeprofile-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;                      
+}
+
+.changeprofile-image {
+    width: 78px;
+    aspect-ratio: 1 / 1;          
+    object-fit: cover;
+    border-radius: 50%;      
+}
+  
+.changeprofile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;                  
+}
+
+.changeprofile-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+  
+.changeprofile-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;                
+}
+
+.changeprofile-hidden-input {
+    display: none;
+}
+  
+.changeprofile-select-btn {
+    padding: 0.5rem 1.25rem;      
+    background-color: var(--richblack-700);
+    color: var(--richblack-50);
+    border: none;
+    border-radius: 0.375rem;       
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.changeprofile-select-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.changeprofile-upload-icon {
+    font-size: 1.125rem;           
+    color: var(--richblack-900);
+}
+  

@@ -1,0 +1,12 @@
+.MyCourses-container {
+    margin-bottom: 3.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MyCourses-title {
+    font-size: 2.5rem; 
+    font-weight: 500; 
+    color: var(--richblack-5);
+}

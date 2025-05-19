@@ -1,0 +1,81 @@
+.llsec {
+    margin: 0 auto;    
+    margin-top: 3rem;
+    width: 100%;
+    max-width: var(--max-content);
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.entirediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.llheading {
+    font-size: 2.25rem; 
+    font-weight: 600;
+}
+
+.lldesc {
+    color: var(--text-richblack-700);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.75rem;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.imgdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.img1{
+    object-fit: contain;
+    margin-right: 0;
+}
+
+.img2{
+    object-fit: contain;
+}
+
+.img3{
+    object-fit: contain;
+    margin-left:0 ;
+}
+
+
+@media screen and (min-width: 1024px){
+    .llsec{
+        margin-top: 7.5rem;
+    }
+    .imgdiv{
+        flex-direction: row;
+    }
+    
+    .img1{
+        margin-right: -130px !important;
+    }
+    
+    .img3{
+        margin-left:-140px !important;
+    }
+}
+
+.llbtn {
+    margin-top: -1.25rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

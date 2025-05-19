@@ -1,0 +1,32 @@
+.ContactForm-container {
+    border: 1px solid var(--richblack-600);
+    color: var(--richblack-300);
+    border-radius: 0.75rem; 
+    padding: 1.75rem;   
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+    .ContactForm-container {
+      padding: 3.5rem; 
+    }
+}
+
+.ContactForm-heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    font-weight: 600; 
+    color: var(--richblack-5);
+}
+
+.ContactForm-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--richblack-300);
+}
+
+.ContactForm-form {
+    margin-top: 1.75rem; 
+}

@@ -1,0 +1,127 @@
+.subSectionModal__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+}
+
+.subSectionModal__container {
+    width: 90%;
+    max-width: 700px;
+    background-color: var(--richblack-800);
+    border: 1px solid var(--richblack-400);
+    border-radius: 8px;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.subSectionModal__header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--richblack-700);
+    padding: 1.25rem;
+    z-index: 10;
+}
+
+.subSectionModal__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--richblack-100);
+}
+
+.subSectionModal__close-btn {
+    background: none;
+    border: none;
+    color: var(--richblack-100);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.subSectionModal__form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: calc(90vh - 100px);
+}
+
+.subSectionModal__title-container,
+.subSectionModal__desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subSectionModal__label {
+    font-size: 0.875rem;
+    color: var(--richblack-100);
+}
+
+.subSectionModal__input,
+.subSectionModal__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--richblack-500);
+  border-radius: 4px;
+  background-color: var(--richblack-900);
+  color: var(--richblack-100);
+  font-size: 1rem;
+}
+
+.subSectionModal__input:disabled,
+.subSectionModal__textarea:disabled {
+  background-color: var(--richblack-700);
+  cursor: not-allowed;
+}
+
+.subSectionModal__error {
+    font-size: 0.75rem;
+    color: var(--pink-200);
+    margin-top: 0.25rem;
+}
+
+.subSectionModal__button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.subSectionModal__form::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.subSectionModal__form::-webkit-scrollbar-track {
+    background: var(--richblack-900);
+    border-radius: 4px;
+}
+
+.subSectionModal__form::-webkit-scrollbar-thumb {
+    background: var(--richblack-500); 
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.subSectionModal__form::-webkit-scrollbar-thumb:hover {
+    background-color: var(--richblack-400); 
+}
+
+
+.subSectionModal__form {
+    scrollbar-width: thin; 
+    scrollbar-color: var(--richblack-500) var(--richblack-900);
+}

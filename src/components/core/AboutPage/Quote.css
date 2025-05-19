@@ -1,0 +1,34 @@
+.aboutsec-2 {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    color: var(--white);
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 5rem; 
+    width: 100%;
+    max-width: fit-content;
+}
+
+@media (min-width: 768px) {
+    .aboutsec-2 {
+      font-size: 2rem; 
+    }
+}    
+
+.aboutsec-2span1 {
+    background: linear-gradient(to bottom, #FF512F, #F09819);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700; 
+}
+
+.aboutsec-2span2 {
+    background: linear-gradient(to bottom, #E65C00, #F9D423);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700; 
+}

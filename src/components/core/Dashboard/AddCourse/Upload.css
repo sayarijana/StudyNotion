@@ -1,0 +1,160 @@
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.upload-label {
+    font-size: 0.875rem;
+    color: var(--richblack-5);
+}
+  
+.upload-label sup {
+    color: var(--pink-200);
+}  
+
+.upload-box {
+    display: flex;
+    min-height: 16rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    border: 2px dotted var(--richblack-500);
+    background-color: var(--richblack-800);
+    transition: background-color 0.3s ease;
+}
+  
+.upload-box.drag-active {
+    background-color: var(--richblack-600);
+}
+  
+.upload-box.uploaded {
+    background-color: var(--richblack-800);
+}
+  
+.upload-preview {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: 1rem;
+}
+  
+.upload-preview img {
+    max-height: 17rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+  
+.upload-player-vdo {
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+}
+  
+.upload-cancel-btn {
+    margin-top: 1rem;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--richblack-400);
+    cursor: pointer;
+    text-decoration: underline;
+}
+  
+.upload-drop-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 100%;
+}
+  
+.upload-icon-container {
+    display: grid;
+    place-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.25rem;
+    background-color: var(--pure-greys-800);
+    border-radius: 50%;
+}
+  
+.upload-icon {
+    color: var(--yellow-50);
+    font-size: 2rem;
+}
+  
+.upload-instructions {
+    font-size: 0.875rem;
+    color: var(--richblack-200);
+    text-align: center;
+}
+  
+.upload-instructions span {
+    font-weight: 600;
+    color: var(--yellow-50);
+}
+  
+.upload-guidelines {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--richblack-200);
+    list-style-type: disc;
+}
+  
+.upload-guidelines li {
+    width: 50%;
+}
+
+.upload-error {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--pink-200);
+    letter-spacing: 0.5px;
+}
+  
+  
+@media (max-width: 48rem) {
+    .upload-box {
+      min-height: 12rem;
+    }
+  
+    .upload-preview {
+      padding: 1rem;
+    }
+  
+    .upload-drop-area {
+      padding: 1rem;
+    }
+  
+    .upload-icon-container {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .upload-icon {
+      font-size: 1.5rem;
+    }
+  
+    .upload-instructions {
+      font-size: 0.75rem;
+}
+  
+    .upload-guidelines {
+      font-size: 0.625rem;
+    }
+  
+    .upload-error {
+      font-size: 0.625rem;
+    }
+  }
+  

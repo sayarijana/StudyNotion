@@ -1,0 +1,48 @@
+.InstructorChart-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--richblack-800);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+  
+.InstructorChart-title {
+    font-size: 1.125rem; 
+    font-weight: 700;   
+    color: var(--richblack-5);
+}
+  
+.InstructorChart-tabs {
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+}
+  
+.InstructorChart-button {
+    padding: 0.5rem 0.75rem; 
+    border-radius: 0.25rem;
+    color: var(--yellow-400);
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: none;
+}
+  
+.InstructorChart-button:hover {
+    cursor: pointer;
+}
+  
+.InstructorChart-button.active {
+    background-color: var(--richblack-700);
+    color: var(--yellow-50);
+}
+  
+.InstructorChart-chartWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    height: 75%;
+}
+  

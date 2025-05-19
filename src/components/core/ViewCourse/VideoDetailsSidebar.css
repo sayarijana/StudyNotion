@@ -1,0 +1,123 @@
+.video-details-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3.5rem);
+    width: 300px;
+    max-width: 290px;
+    border-right: 1px solid var(--richblack-700);
+    background-color: var(--richblack-800);
+}
+
+.video-details-sidebar-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.25rem;
+    border-bottom: 1px solid var(--richblack-600);
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--richblack-25);
+}
+  
+.video-details-sidebar-back-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+  
+.video-details-sidebar-back-btn {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--richblack-100);
+    color: var(--richblack-700);
+    border-radius: 9999px;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+  
+.video-details-sidebar-back-btn:hover {
+    transform: scale(0.9);
+}
+  
+.video-details-sidebar-course-info {
+    display: flex;
+    flex-direction: column;
+}
+  
+.video-details-sidebar-course-progress {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--richblack-500);
+}
+  
+.video-details-sidebar-sections {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+}
+  
+.video-details-sidebar-section {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--richblack-5);
+}
+  
+.video-details-sidebar-section-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--richblack-600);
+    padding: 1rem 1.25rem;
+}
+  
+.video-details-sidebar-section-section-name {
+    width: 70%;
+    font-weight: 600;
+}
+  
+.video-details-sidebar-section-chevron-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+  
+.video-details-sidebar-section-chevron-icon {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.video-details-sidebar-subsections {
+    transition: height 0.5s ease-in-out;
+}
+  
+.video-details-sidebar-subsection {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    color: var(--richblack-5);
+    cursor: pointer;
+}
+  
+.video-details-sidebar-subsection:hover {
+    background-color: var(--richblack-900);
+}
+  
+.video-details-sidebar-subsection.active {
+    background-color: var(--yellow-200);
+    font-weight: 600;
+    color: var(--richblack-800);
+}
+  
+@media (max-width: 768px) {
+    .video-details-sidebar {
+      width: 200px;
+    }
+}
+  
+
+  
