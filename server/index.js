@@ -28,8 +28,11 @@ app.use(cookieParser());
 //frontend url
 app.use(
     cors({
-        origin:"https://studynotion-backend-peeo.onrender.com",
-        credentials:true
+    origin: [
+          "https://studynotion-frontend-kappa-peach.vercel.app",
+          "https://studynotion-frontend-hqhi9ekyl-sayari-janas-projects.vercel.app"
+        ],
+       credentials:true
     })
 );
 
